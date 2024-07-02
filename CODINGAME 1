@@ -1,0 +1,23 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+ Test 1
+Input
+Expected output
+6
+                   _..
+  /}_{\           /.-'
+ ( o o )-.___...-'/
+ ==._.==         ;
+      \ i _..._ /,
+      {_;/   {_//
+                   _..
+  /}_{\           /.-'
+ ( x x )-.___...-'/
+ ==._.==         ;
+      \ i _..._ /,
+      {_;/   {_//
+SOLUTION:
+n = int(input())
+for i in range(n):
+    row = input()
+    a=row.replace("o","x")
+    print(a)
